@@ -1,102 +1,18 @@
 
+/* reset */
 *{margin: 0;
 padding: 0;
 }
-body{font-family: sans-serif;
+/* body general style */
+/* navbar style */
+body{
+    font-family: 'Montserrat', sans-serif;
+    overflow: hidden;
 }
-.barraNavegacion {
-    display: block;
-    padding: 10px 20px;
-    background-color: RGBA(100, 200, 255, 1);
+#menu{  
+    background-color: aquamarine;
+    opacity: 0.7;
 }
-.barraNavegacion a {
-        display: inline-block; 
-        padding: 10px 15px;
-        margin: 0 10px;
-        color: white;
-        text-decoration: none;
-        font-weight: bold;
-}
-h1{
-    font-size: 500%;
-    color: white; text-shadow: black 0.1em 0.1em 0.2em;
-    background-color: RGBA(169, 245, 255, 1);
-}
-#textMainPage{
-    font-size: 500%;
-    max-width: 600px;
-    color: white; text-shadow: black 0.1em 0.1em 0.2em;
-    background-color:  RGBA(255, 255, 255, 0.3);
-    margin: 20px;
-    padding: 20px;
-    border-radius: 10px;
-    width: auto;
-}
-h2{
-    font-size: 250%;
-    color: white; text-shadow: black 0.1em 0.1em 0.2em;
-    text-align: center;
-    line-height: 1.4;
-    margin: 15px;
-}
-h3{
-    margin-top:15px;
-    margin-bottom: 15px;
-}
-
-.text{
-    font-size: 125%;
-    color: white; text-shadow: black 0.1em 0.1em 0.2em;
-    background-color: RGBA(100, 200, 255, 0.5);
-    line-height: 150%;
-    margin: 20px;
-    padding: 30px;
-    border-radius: 10px;
-}
-.text a{
-    color: white;
-    font-weight: bold;
-}
-.redes-sociales{
-    display: flex;
-    justify-content: center;
-}
-.icono {
-    margin: 0 10px;
-    max-width: 50px;
-    max-height: 50px;
-    height: auto;
-    width: auto;
-}
-.formContainer{
-    display: block;
-    width: fit-content;
-    margin: 20px auto;
-    padding: 15px;
-    border: 1px solid #ccc;
-    border-radius: 4px;
-    background-color: RGBA(169, 245, 255, 0.5);
-}
-.form-container label {
-    display: block;
-    margin-bottom: 5px;
-}
-.form-container input,.form-container textarea {
-    box-sizing: border-box;
-    padding: 8px;
-    width: 100%;
-    border: 1px solid #ccc;
-    border-radius: 4px;
-}
-.form-container button {
-    background-color: #4CAF50;
-    color: white;
-    padding: 10px 20px;
-    border: none;
-    border-radius: 4px;
-    cursor: pointer;
-}
-footer {
-    text-align: center;
-    padding: 10px;
+#menu a{
+    font-size: 1.2rem;
 }
