@@ -3,6 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
     <link rel="stylesheet" href="../style.css">
     <title>PiscinasOasis</title>
@@ -50,60 +51,30 @@
     
         </header>
     <main>
-    <h2>Nuestras Redes</h2>
-    <div class="redes-sociales">  
-        <a href="https://www.instagram.com/coderhouse/?hl=es" target="_blank"><img src="../assets/iconoInstagram.png" class="icono" alt="iconoInstagram"></a>
-        <a href="https://www.facebook.com/Coderhouse/" target="_blank"><img src="../assets/iconoFacebook.png" class="icono" alt="iconoFacebook"></a>
-        <a href="https://api.whatsapp.com/send/?phone=5491130340087" target="_blank"><img src="../assets/iconoWhatsapp.png" class="icono" alt="iconoWhatsapp"></a>
-        <a href="https://twitter.com/x/migrate?tok=7b2265223a222f436f646572486f757365417267222c2274223a313731383630343930327d2ad09c5dec201adcb91be3763ba82c20" target="_blank"><img src="../assets/iconoX.png" class="icono" alt="iconoX"></a>
-    </div>
-    <h2>Manda un correo electronico</h2>
-    <form class="formContainer">
-    <label for="name">Nombre:</label>
-    <input type="text" id="name" name="name" required placeholder="Ingrese su nombre">
-    <br>
-    <br>
-    <label for="email">Email:</label>
-    <input type="email" id="email" name="email" required placeholder="dirección de correo">
-    <br>
-    <br>
-    <label for="message">Mensaje</label>
-    <textarea id="message" name="message" required placeholder="Este formulario no es funcional"></textarea>
-    <br>
-    <br>
-    <button type="submit">enviar</button>
-    </form>
-    </main>
-
-      <footer class="text-white text-center text-lg-start">
-        <div class="container-fluid p-3 mb-3 mt-3 justify-content-center">
-          <div class="row">
-            <div class="col-lg-6 col-md-12 mb-4 mb-md-0">
-              <h5 class="text-uppercase">CONTACTO</h5>
-              <p>
-                ¿Tiene alguna pregunta sobre piscinas enterradas? Estamos a su disposición para brindarle toda la información que necesite. Creamos piscinas a medida, diseñadas para satisfacer sus gustos y necesidades. Consulte nuestras convenientes opciones de financiamiento.<br>
-               <a href="./pages/contactanos.html">Ponte en contacto con nosotros.</a> 
-              </p>
+      <!-- --- --- --- ---main--- --- --- --- -->
+       <div class="container-fluid bgTexto">
+          <div class="row justify-content-center">
+            <div class="col-10 col-md-4 d-flex justify-content-center">
+              <h3 class="mt-3 mb-3 mt-lg-5 mb-lg-5">Nuestras Redes</h3>
             </div>
-            
-            <div class="col-lg-6 col-md-12 mb-4 mb-md-0">
-              <h5 class="text-uppercase">REDES</h5>
-      
-              <p>
-                <a href="./pages/contactanos.html">Encuentra más contenido en nuestras redes.</a>
-              </p>
-            </div>
-  
           </div>
-  
-        </div>
-      
-        <!-- Copyright -->
-        <div class="text-center p-3 copyR">
-          <p>&copy; PiscinasOasis 2024 - Todos los derechos reservados</p>
-        </div>
-  
-      </footer>
+          <div class="row justify-content-center">
+            <div class="col-10 col-md-4 d-flex justify-content-between mt-3 mb-3 mt-lg-5 mb-lg-5">
+              <i class="bi bi-instagram"></i>
+              <i class="bi bi-whatsapp"></i>
+              <i class="bi bi-facebook"></i>
+              <i class="bi bi-twitter-x"></i>
+            </div>
+          </div>
+       </div>
+
+    </main>
+    <footer>
+    <!-- --- --- --- ---Copyright--- --- --- --- -->
+      <div class="text-center p-3 copyR">
+        <p>&copy; PiscinasOasis 2024 - Todos los derechos reservados</p>
+      </div>
+    </footer>
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
 </body>
