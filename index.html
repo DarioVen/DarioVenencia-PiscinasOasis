@@ -8,20 +8,23 @@
     <title>PiscinasOasis</title>
     <style>
         body{
-    background-image: url(assets/pexels-pixabay-piscina\ main.jpg);
+    background-image: url(./assets/background/homeBackground.jpg);
     background-repeat: no-repeat;
     background-attachment: fixed;
     background-size: cover;
+    background-position: left center;
     }
     </style>    
 </head>
 <body>
+
 <!--------------HEADER-------------->
     <header>
 <!--------------BARRA DE NAVEGACIÓN-------------->
+
     <nav class="navbar navbar-expand-lg sticky-top nav-underline" id="menu">
       <div class="container-fluid">
-        <a class="navbar-brand fs-1 fw-bold">PiscinasOasis</a>
+        <a class="navbar-brand fs-1 fw-bold p-1">PiscinasOasis</a>
         <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
           <span class="navbar-toggler-icon"></span>
         </button>
@@ -50,12 +53,94 @@
     </header>
 <!--------------MAIN-------------->
     <main>
-        <div class="container-sm-6">
-        <p class="textMainPage">vida a tu jardín con una piscina de diseño y productos de calidad</p>
+<!--------------CAROUSEL-------------->
+<div class="container-fluid position-relative" id="carouselHomePageContainer">
+  <div class="row justify-content-center">
+    <div class="col-lg-6">
+      <div id="carouselHomePage" class="carousel slide" data-bs-ride="carousel">
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <img src="./assets/piscinas/piscina1.jpg" class="d-block w-100" alt="Una Piscina">
+          </div>
+          <div class="carousel-item">
+            <img src="./assets/piscinas/piscina2.jpg" class="d-block w-100" alt="Una Piscina">
+          </div>
+          <div class="carousel-item">
+            <img src="./assets/piscinas/piscina3.jpg" class="d-block w-100" alt="Una Piscina">
+          </div>
+          <div class="carousel-item">
+            <img src="./assets/piscinas/piscina4.jpg" class="d-block w-100" alt="Una Piscina">
+          </div>
+          <div class="carousel-item">
+            <img src="./assets/piscinas/piscina5.jpg" class="d-block w-100" alt="Una Piscina">
+          </div>
+          <div class="carousel-item">
+            <img src="./assets/piscinas/piscina6.jpg" class="d-block w-100" alt="Una Piscina">
+          </div>
+          <div class="carousel-item">
+            <img src="./assets/piscinas/piscina7.jpg" class="d-block w-100" alt="Una Piscina">
+          </div>
         </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselHomePage" data-bs-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselHomePage" data-bs-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Next</span>
+        </button>
+      </div>
+
+    </div>
+  </div>
+</div>
+<!--------------CONTENIDO DE TEXTO-------------->
+<div class="container w-auto">
+    <div class="row">
+      <div class="col-sm-4 mb-2 mt-2">
+        <P class="text-white text-wrap text-center fs-5 bgContenidoDeTexto">"Diseñamos y construimos piscinas personalizadas, adaptándonos a tus necesidades y gustos."</P>
+      </div>
+
+      <div class="col-sm-4 mb-2 mt-2">
+        <P class="text-white text-wrap text-center fs-5 bgContenidoDeTexto">"Descubre el lujo de tener una piscina diseñada exclusivamente para ti."</P>
+      </div>
+
+      <div class="col-sm-4 mb-2 mt-2">
+        <P class="text-white text-wrap text-center fs-5 bgContenidoDeTexto">"Ofrecemos un servicio de mantenimiento integral para que disfrutes de tu piscina todo el año."</P>
+      </div>
+    </div>
+</div>
+
     </main>
-    <footer>
+<!--------------FOOTER-------------->
+    <footer class="text-white text-center text-lg-start">
+      <div class="container-fluid p-3 mb-3 mt-3 justify-content-center">
+        <div class="row">
+          <div class="col-lg-6 col-md-12 mb-4 mb-md-0">
+            <h5 class="text-uppercase">CONTACTO</h5>
+    
+            <p>
+             <a href="./pages/contactanos.html">Ponte en contacto con nosotros.</a> 
+            </p>
+          </div>
+          
+          <div class="col-lg-6 col-md-12 mb-4 mb-md-0">
+            <h5 class="text-uppercase">REDES</h5>
+    
+            <p>
+              <a href="./pages/contactanos.html">Encuentra más contenido en nuestras redes.</a>
+            </p>
+          </div>
+
+        </div>
+
+      </div>
+    
+      <!-- Copyright -->
+      <div class="text-center p-3" style="background-color: rgba(0, 0, 0, 0.5);">
         <p>&copy; PiscinasOasis 2024 - Todos los derechos reservados</p>
+      </div>
+
     </footer>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
 </body>
