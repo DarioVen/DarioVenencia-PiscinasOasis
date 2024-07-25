@@ -1,0 +1,17 @@
+/*general style */
+
+body {
+    font-family: 'Montserrat', sans-serif;
+    overflow-x: hidden;
+    min-height: 100vh;
+    margin: 0;
+    display: grid;
+    grid-template-rows: auto 1fr auto;
+    }
+
+@media (min-width: 1024px){
+        html{
+            font-size: 20px;
+        }
+        
+    }

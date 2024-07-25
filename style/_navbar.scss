@@ -1,0 +1,17 @@
+@import './variables';
+
+/* navbar style */
+.navbar-brand{
+    text-shadow: 0 0 0.2rem aqua;
+}
+
+#menu {
+    background-color: $verdeFuerte;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    border-bottom: 2px solid $verdeDebil;
+    padding-bottom: 0;
+}
+
+#menu a {
+    font-size: 1.2rem;
+}

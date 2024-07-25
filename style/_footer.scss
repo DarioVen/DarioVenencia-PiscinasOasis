@@ -1,0 +1,26 @@
+@import './variables';
+
+/* footer */
+footer{
+    margin-left: 5vw;
+    margin-right: 5vw;
+    background-color: $verdeFuerte;
+    background-clip: padding-box;
+    border: 2px solid $verdeDebil;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    text-shadow: 0 0 0.5rem black;
+}
+footer a{
+    text-shadow: none;
+}
+.copyR{
+background-color: $verdeDebil ;
+}
+
+@media (max-widht:500px) {
+    footer{
+        margin-left: 1vw;
+        margin-right: 1vw;
+    }
+}

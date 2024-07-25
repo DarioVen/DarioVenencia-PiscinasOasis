@@ -1,153 +1,154 @@
-    
-    /* body general style */
+@charset "UTF-8";
+/*general style */
+body {
+  font-family: "Montserrat", sans-serif;
+  overflow-x: hidden;
+  min-height: 100vh;
+  margin: 0;
+  display: grid;
+  grid-template-rows: auto 1fr auto;
+}
 
-    body {
-        font-family: 'Montserrat', sans-serif;
-        overflow-x: hidden;
-        min-height: 100vh;
-        margin: 0;
-        display: grid;
-        grid-template-rows: auto 1fr auto;
-      }
-    
-      @media (min-width: 1024px){
-        html{
-            font-size: 20px;
-        }
-        
-      }
-    
-    /* navbar style */
+@media (min-width: 1024px) {
+  html {
+    font-size: 20px;
+  }
+}
+/* footer */
+footer {
+  margin-left: 5vw;
+  margin-right: 5vw;
+  background-color: rgba(127, 255, 212, 0.5);
+  background-clip: padding-box;
+  border: 2px solid rgba(0, 255, 255, 0.5);
+  border-radius: 10px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  text-shadow: 0 0 0.5rem black;
+}
 
-    .navbar-brand{
-        text-shadow: 0 0 0.2rem aqua;
-    }
+footer a {
+  text-shadow: none;
+}
 
-    #menu {
-        background-color: rgba(127, 255, 212, 0.5);
-        box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-        border-bottom: 2px solid rgb(0, 255, 255, 0.5);
-        padding-bottom: 0;
-    }
-    
-    #menu a {
-      font-size: 1.2rem;
-    }
-    /* titulo style */
+.copyR {
+  background-color: rgba(0, 255, 255, 0.5);
+}
 
-    #h1Título{
-        font-family: "Playfair Display", serif;
-        font-optical-sizing: auto;
-        font-weight: 700;
-        font-style: normal;
-        max-width: 90vw;
-        margin-left: 5vw;
-        margin-right: 5vw;
-        background-color: rgba(0, 0, 0, 0.3);
-        background-clip: padding-box;
-        border: 1px solid rgba(255, 255, 255, 0.3);
-        border-radius: 10px;
-        box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-        text-shadow: 0 0 0.2rem black;
-    }
+@media (max-widht: 500px) {
+  footer {
+    margin-left: 1vw;
+    margin-right: 1vw;
+  }
+}
+/* Carousel Home Page */
+#carouselHomePageContainer.container-fluid.position-relative::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  backdrop-filter: blur(8px);
+  z-index: -1;
+}
 
-    #h1Título ul{
-        font-family: "Playwrite PE", cursive;
-        font-optical-sizing: auto;
-        font-weight: 200;
-        font-style: normal
-    }
+.carousel-item {
+  height: 45vh;
+  padding-top: 2.5vh;
+  padding-bottom: 2.5vh;
+}
 
-    @media (max-widht:500px) {
-        #h1Título{
-            margin-left: 1vw;
-            margin-right: 1vw;
-        }
-    }
+.carousel-item img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
 
-    /* Carousel Home Page */
+/* navbar style */
+.navbar-brand {
+  text-shadow: 0 0 0.2rem aqua;
+}
 
-    #carouselHomePageContainer.container-fluid.position-relative::after {
-        content: "";
-        position: absolute;
-        top: 0;
-        left: 0;
-        width: 100%;
-        height: 100%;
-        backdrop-filter: blur(8px);
-        z-index: -1;
-      }
+#menu {
+  background-color: rgba(127, 255, 212, 0.5);
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  border-bottom: 2px solid rgba(0, 255, 255, 0.5);
+  padding-bottom: 0;
+}
 
-    .carousel-item {
-      height: 45vh;
-      padding-top: 2.5vh;
-      padding-bottom: 2.5vh;
-    }
-    
-    .carousel-item img {
-      width: 100%;
-      height: 100%;
-      object-fit: cover; 
-    }
+#menu a {
+  font-size: 1.2rem;
+}
 
-    /* contenido de texto mainPage */
+/* titulo style */
+#h1Título {
+  font-family: "Playfair Display", serif;
+  font-optical-sizing: auto;
+  font-weight: 700;
+  font-style: normal;
+  max-width: 90vw;
+  margin-left: 5vw;
+  margin-right: 5vw;
+  background-color: rgba(0, 0, 0, 0.5);
+  background-clip: padding-box;
+  border: 1px solid rgba(255, 255, 255, 0.5);
+  border-radius: 10px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+#h1Título ul {
+  font-family: "Playwrite PE", cursive;
+  font-optical-sizing: auto;
+  font-weight: 200;
+  font-style: normal;
+}
+
+@media (max-widht: 500px) {
+  #h1Título {
+    margin-left: 1vw;
+    margin-right: 1vw;
+  }
+}
+/* contenido de texto mainPage */
 .bgContenidoDeTexto {
-    display: flex;
-    height: 100%;
-    align-items: center;
-    background-color: rgba(0, 0, 0, 0.3);
-    background-clip: padding-box;
-    border: 1px solid rgba(255, 255, 255, 0.3);
-    border-radius: 10px;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-  }
-
-      /* contenido de texto*/
-      .bgTexto {
-        color: white;
-        background-color: rgba(0, 0, 0, 0.5);
-        background-clip: padding-box;
-        border: 1px solid rgba(255, 255, 255, 0.5);
-        border-radius: 10px;
-        box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-      }
-      h3{
-        text-shadow: 0 0 0.2rem aqua;
-      }
-      h4{
-        text-decoration: underline;
-      }
-      /* contenido multimedia */
-      .videoPiscinas video{
-        border-radius: 1rem;
-        margin: 0;
-        padding: 0;
-        width: 100%;
-        height:auto;
-        object-fit: contain;
-      }
-
-  /* footer */
-  footer{
-    margin-left: 5vw;
-    margin-right: 5vw;
-    background-color: rgba(127, 255, 212, 0.5);
-    background-clip: padding-box;
-    border: 2px solid rgb(0, 255, 255, 0.5);
-    border-radius: 10px;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-    text-shadow: 0 0 0.2rem black;
-  }
-footer a{
-    text-shadow: none;
+  padding: 1rem;
+  display: flex;
+  height: 100%;
+  align-items: center;
+  background-color: rgba(0, 0, 0, 0.5);
+  background-clip: padding-box;
+  border: 1px solid rgba(255, 255, 255, 0.5);
+  border-radius: 10px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
 }
-.copyR{
-   background-color: rgb(0, 255, 255, 0.5) ;
-  }
-  
-@media (max-widht:500px) {
-    footer{
-        margin-left: 1vw;
-        margin-right: 1vw;
-    }
+
+/* contenido de texto*/
+.bgTexto {
+  padding: 1rem;
+  color: white;
+  background-color: rgba(0, 0, 0, 0.5);
+  background-clip: padding-box;
+  border: 1px solid rgba(255, 255, 255, 0.5);
+  border-radius: 10px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
 }
+
+h3 {
+  text-shadow: 0 0 0.2rem aqua;
+}
+
+h4 {
+  text-decoration: underline;
+}
+
+/* contenido multimedia */
+.videoPiscinas video {
+  border-radius: 1rem;
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  height: auto;
+  object-fit: contain;
+}
+
+/*# sourceMappingURL=style.css.map */
