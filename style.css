@@ -9,9 +9,9 @@ body {
   grid-template-rows: auto 1fr auto;
 }
 
-@media (min-width: 1024px) {
+@media (min-width: 1440px) {
   html {
-    font-size: 20px;
+    font-size: 22px;
   }
 }
 /* footer */
@@ -34,12 +34,6 @@ footer a {
   background-color: rgba(0, 255, 255, 0.5);
 }
 
-@media (max-widht: 500px) {
-  footer {
-    margin-left: 1vw;
-    margin-right: 1vw;
-  }
-}
 /* Carousel Home Page */
 #carouselHomePageContainer.container-fluid.position-relative::after {
   content: "";
@@ -54,8 +48,6 @@ footer a {
 
 .carousel-item {
   height: 45vh;
-  padding-top: 2.5vh;
-  padding-bottom: 2.5vh;
 }
 
 .carousel-item img {
@@ -80,6 +72,10 @@ footer a {
   font-size: 1.2rem;
 }
 
+ul li {
+  margin-top: 1rem;
+}
+
 /* titulo style */
 #h1Título {
   font-family: "Playfair Display", serif;
@@ -101,25 +97,6 @@ footer a {
   font-optical-sizing: auto;
   font-weight: 200;
   font-style: normal;
-}
-
-@media (max-widht: 500px) {
-  #h1Título {
-    margin-left: 1vw;
-    margin-right: 1vw;
-  }
-}
-/* contenido de texto mainPage */
-.bgContenidoDeTexto {
-  padding: 1rem;
-  display: flex;
-  height: 100%;
-  align-items: center;
-  background-color: rgba(0, 0, 0, 0.5);
-  background-clip: padding-box;
-  border: 1px solid rgba(255, 255, 255, 0.5);
-  border-radius: 10px;
-  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
 }
 
 /* contenido de texto*/
@@ -149,6 +126,43 @@ h4 {
   width: 100%;
   height: auto;
   object-fit: contain;
+}
+
+@keyframes ZoomDeInicio {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+    visibility: visible;
+  }
+}
+.delayIncremental, .animacionInicio-5, .animacionInicio-4, .animacionInicio-3, .animacionInicio-2, .animacionInicio-1 {
+  visibility: hidden;
+  animation-name: ZoomDeInicio;
+  animation-duration: 1.2s;
+  animation-timing-function: ease;
+  animation-fill-mode: forwards;
+}
+
+.animacionInicio-1 {
+  animation-delay: 1s;
+}
+
+.animacionInicio-2 {
+  animation-delay: 2s;
+}
+
+.animacionInicio-3 {
+  animation-delay: 3s;
+}
+
+.animacionInicio-4 {
+  animation-delay: 4s;
+}
+
+.animacionInicio-5 {
+  animation-delay: 5s;
 }
 
 /*# sourceMappingURL=style.css.map */

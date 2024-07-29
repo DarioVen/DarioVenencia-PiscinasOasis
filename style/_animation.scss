@@ -1,0 +1,27 @@
+
+    @keyframes ZoomDeInicio {
+        from {
+            opacity: 0;
+        }
+        to {
+            opacity: 1;
+            visibility: visible;
+        }
+    }
+        
+    .delayIncremental{
+        visibility: hidden;
+        animation-name: ZoomDeInicio;
+        animation-duration: 1.2s;
+        animation-timing-function: ease;
+        animation-fill-mode: forwards;
+    }
+
+    $retraso-base: 1s;
+
+    @for $i from 1 through 5 {
+        .animacionInicio-#{$i} {
+        @extend .delayIncremental;
+        animation-delay: $i * $retraso-base;
+        }
+    }
